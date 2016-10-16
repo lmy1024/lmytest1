@@ -1,0 +1,53 @@
+body{
+    padding:20px;
+}
+.main{
+    background-color:#eee;
+    border:1px solid #999;
+    padding:20px;
+    font-family: "ËÎÌו";
+    font-size: 15px;
+    overflow: hidden;
+    min-width:600px;
+}
+img{
+    height:80px;
+    width:80px;
+    margin:20px 20px 30px 20px;
+
+}
+.left{
+    width:200px;
+    border:1px solid #999;
+    float:left;
+    padding:20px;
+    background: #fff;
+    font-size:20px;
+    font-weight:bold;
+    text-align: center;
+}
+
+.leftlogo{
+    float:left;
+}
+
+.right{
+    width: 120px;
+    float: right;
+    background: #fff;
+    border: 1px solid #999;
+}
+
+.middle{
+    border:1px solid #999;
+    padding:20px;
+    margin-left:260px;
+    margin-right:140px;
+    background:#fff;
+}
+h2{
+    text-indent:1em;
+}
+article{
+    text-indent:2em;
+}

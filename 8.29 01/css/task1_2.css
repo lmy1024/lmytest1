@@ -1,0 +1,149 @@
+*{
+    margin:0;padding:0;
+}
+body{
+    font-family:'Microsoft YaHei';
+    background:#dedede;
+}
+/********头部******/
+header{
+    position:relative;
+    height:60px;
+    background:#333;
+
+}
+header h3 img{
+    padding-left:20px;
+    height:58px;
+}
+header nav ul{
+    position:absolute;
+    top:0;
+    right:10px;
+}
+
+header nav ul li{
+    text-align: center;
+    width:60px;
+    display:block;
+    float:left;
+    padding:20px 10px;
+}
+header ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:16px;
+}
+header ul li:hover{
+    border-bottom: 1px solid red;
+    background: #474747;
+    border-radius: 3px;
+
+}
+
+/**********段落*************/
+.passage-body {
+    min-width:1100px;
+}
+
+.passage-body .main {
+    margin:30px 550px 30px 30px;
+}
+
+.passage-body .main .passage-section{
+    background-color:white;
+    display:block;
+    padding:20px;
+    border-width:0px 5px 0px 5px;
+    border-color:grey;
+    margin-bottom:30px;
+
+
+}
+
+.passage-body .main .passage-section p{
+    text-indent:2em;
+}
+/***********图片段落**************/
+.picture li{
+   /* float:left;*/
+    border:1px solid black;
+    margin:20px;
+    text-align: center;
+    font-weight:bold;
+    width:80px;
+    height:80px;
+    float:left;
+}
+.picture li img{
+    width:80px;
+    height:80px;
+
+}
+
+
+
+/************侧栏*************/
+.passage-body .passage-side{
+    background-color:white;
+    display:block;
+    margin-right:30px;
+    padding:20px;
+    float:right;
+    width:400px;
+}
+.passage-body .passage-side h4{
+    height:40px;
+    line-height:40px;
+    padding-left:10px;
+    border-left:3px solid #ccc;
+}
+.passage-body .passage-side h5{
+    height:30px;
+    padding-left:20px;
+
+}
+.passage-body .passage-side .form-div{
+    font-size: 14px;
+    margin:15px 0px;
+}
+.passage-body .passage-side .form-div .tips{
+    float:left;           /*添加后个人描述四个字才和文本域上对齐*/
+    text-align:right;
+    width:35%;
+    padding-right:5px;
+}
+.passage-body .passage-side .form-div p{
+    margin-left:35%;
+    padding-left:15px;
+    font-size:12px;
+    color: #aaa;
+}
+.passage-body .passage-side .form-div textarea{
+    height:100px;
+    width:50%;
+}
+.passage-body .passage-side .formsubmit{
+    width:95%;
+    height:40px;
+    margin:3%;
+    background:blue;
+    color:white;
+    text-align:center;
+    border-radius:10px;
+    line-height:40px;
+    overflow:hidden;
+
+}
+footer{
+    text-align:center;
+    background:#333;
+    height:50px;
+}
+footer p{
+    color:white;
+    font-family:'Microsoft YaHei';
+}
+.clearfix{
+    clear:both;
+}

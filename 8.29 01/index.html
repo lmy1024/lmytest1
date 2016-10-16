@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="GB2312">
+<meta name="description" content="下拉选择框select的纯CSS替代方案 - 教程 Demo" />
+<meta name="keywords" content="select,CSS3" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>下拉选择框select的纯CSS替代方案 - 教程 Demo</title>
+<link href='http://fonts.googleapis.com/css?family=Unica+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="screen.css"  media="screen" title="no title" >
+
+
+<!-- custom modernizr build -->
+<script src="modernizr.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<!--[if (IE 8)]>
+<script>
+	$(document).ready(function(){
+		$(".radio-options li").bind("click", function() {
+			$(this).siblings(".checked").removeClass("checked");
+			$(this).addClass("checked");
+			});
+	});
+</script>
+<![endif]-->
+<script>
+$(document).ready(function(){
+	if (Modernizr.touch) {
+			$(".radio-options").bind("click", function(event) {
+				if (!($(this).parent('.radio-container').hasClass("active")))	{
+				$(this).parent('.radio-container').addClass("active"); 
+				event.stopPropagation();
+				}
+			});	
+	$(".toggle").bind("click", function(){ 
+		$(this).parents('.radio-container').removeClass("active"); 
+		return false;
+		 });  
+	}
+})
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body>
+<br>
+<a href="http://www.jcodecraeer.com" style="background-color:#1b9e4d;font-size:24px;font-weight:600;color:#FFF; border-radius: 10px;padding:4px;margin-left:12px;text-decoration:none">返回首页</a>
+<section class="form">
+	<h1>Everyone's Irish on March 17th</h1>
+	<form>
+		<fieldset class="radio-container">
+			<div class="radio-options">
+				<div class="toggle">Choose your beer</div>
+				<ul>
+					<li>
+						<input type="radio" name="my-beer" id="choice1" value="choice1">
+						<label for="choice1">Cul Dorcha</label>
+					</li>
+					<li>
+						<input type="radio" name="my-beer" id="choice2" value="choice2">
+						<label  for="choice2">Rowers Red Ale</label>
+					</li>
+					<li>
+						<input type="radio" name="my-beer" id="choice3" value="choice3">
+						<label for="choice3">Belfast Ale</label>
+					</li>
+						<li>
+							<input type="radio" name="my-beer" id="choice4" value="choice4">
+							<label for="choice4">O'Hara Irish Stout</label>
+						</li>
+				</ul>	
+			</div>
+		</fieldset>
+	</form>
+		
+		<p>这篇教程中，我将给大家展示表单元素下拉选择框select的CSS替代方案。该方法采用css来实现，看上去非常简单。我们用radio标签列表来模拟下拉列表，选择一个radio可以很好的模拟出select中选择一个元素的效果。</p>
+</section>
+
+</body>
+</html>

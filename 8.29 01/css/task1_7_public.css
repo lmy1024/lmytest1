@@ -1,0 +1,89 @@
+body {
+    background:#fff;
+}
+.main {
+    width:100%;
+    min-width:1280px;
+    position:relative;
+    margin:0 auto;
+}
+.public-header {
+    position:relative;
+    height:58px;
+    overflow:hidden;
+}
+
+.public-header .new_world {
+    width:106px;
+    float:left;
+    margin-left:5%;
+    margin-top:1%;
+}
+.public-header img {
+    float:left;
+    width:32px;
+    height:32px;
+}
+.public-header h2{
+    line-height:32px;
+    font-size:21px;
+    font-family:"黑体";
+}
+.public-header .nav {
+    position:absolute;
+    right:0px;
+}
+.public-header .nav ul li {
+    float:left;
+}
+.public-header .nav ul li a {
+    width:110px;
+    height:56px;
+    font-size:14px;
+    line-height: 56px;
+    text-align:center;
+    font-family:"微软雅黑";
+    color : #bec0c3;
+}
+
+.public-header .nav ul li a:hover , .public-header .nav ul li a:active {
+    color: #ea6b60;
+    border-bottom:4px solid #ea6b60;
+
+}
+
+
+.public-header .nav ul li .welcome-page {
+    width : 65px;
+}
+.public-header .nav ul li .head_login{
+    width:50px;
+    margin-left:20px;
+    vertical-align : middle;
+    color : #ea6b60;
+    background:url("../images/task1_7/login_1.png") no-repeat left;
+    text-align:left;
+    padding-left:17px;
+}
+
+.public-footer {
+    background : #2f3039;
+    height:58px;
+
+}
+.public-footer p {
+    float:left;
+    margin-left:97px;
+    font-size:12px;
+    line-height:58px;
+    color:#fff;
+
+}
+
+.public-footer a{
+    float:right;
+    margin-right:40px;
+    font-size:12px;
+    line-height:58px;
+    color:#fff;
+}
